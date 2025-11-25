@@ -27,8 +27,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        arch: mipsel_24kc
-        sdk: openwrt-22.03
+        arch: [mipsel_24kc]
+        sdk: [openwrt-22.03]
     steps:
       - uses: actions/checkout@v4
         with:
